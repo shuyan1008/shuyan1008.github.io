@@ -17,7 +17,9 @@
       <pubDate>Thu, 16 Apr 2020 15:41:09 +0800</pubDate>
       
       <guid>http://example.org/posts/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
-      <description>shuyan个人博客 如何用hugo搭建个人博客</description>
+      <description> shuyan个人博客 如何用hugo搭建个人博客
+ 先去hugo官网下载安装程序，把解压后把hugo.exe单独放在d/software/hugo目录下 右键电脑-属性-高级系统设置-环境变量-双击path。把hugo.exe所在的目录添加到列表中 在d/software/hugo下运行cmder 打开vscode-终端 输入hugo version执行 hugo new site quickstart执行，注意quickstart可以修改成：你github上的用户名.github.io+文件名 cd shuyan1008.github.io-creator执行 git init执行，在建好的目录中新建一个.git仓库 echo &amp;lsquo;theme = &amp;ldquo;ananke&amp;rdquo;&amp;rsquo; &amp;gt;&amp;gt; config.toml执行 hugo server -D执行 hugo new posts/my-first-post.md执行，my-first-post为博客的名字，可以使用中文；个人博客文件在content目录中；按alt+左键：http://localhost:1313/，可以查看你的博客， baseURL = &amp;ldquo;https://example.org/&amp;quot; languageCode = &amp;ldquo;en-us&amp;rdquo; title = &amp;ldquo;My New Hugo Site&amp;rdquo;theme = &amp;ldquo;ananke&amp;rdquo; hugo -D执行，新建一个public目录，使用gitignore,移除public目录，在public中新建git仓库，将public目录传到github上，注意github上新建的仓库名必须为（githuby用户名.github.io） 打开新建的github仓库，进入settings，GitHub Pages里面的链接就将hugo上的博客传到了github上。
+但是我这边为什么没办法使用样式呢？  </description>
     </item>
     
   </channel>
